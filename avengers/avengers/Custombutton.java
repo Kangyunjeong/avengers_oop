@@ -36,20 +36,20 @@ public class Custombutton extends JButton implements MouseListener {
 			g.fillRect(0,0,250,250);
 		}
 		
-		g.setColor(new Color(0,50,hover ? 255 : 180));
+		g.setColor(new Color(224, hover ? 160 : 224, 224));
 		
 		g.fillRect(0,0,250,7);
 		g.fillRect(0,143,250,7);
 		g.fillRect(0,0,7,150);
 		g.fillRect(243, 0, 7, 150);
 		
-		g.setColor(new Color(230,0,230));
+		g.setColor(new Color(128, 128, 128));
 		
 		g.fillRect(14, 14, 222, 122);
-		
+
 		g.setColor(Color.WHITE);
 		
-		g.setFont(Font.decode("arial-BOLD-24"));
+		g.setFont(Font.decode("arial-BOLD-ITALIC-30"));
 		
 		FontMetrics metrics = g.getFontMetrics();
 		

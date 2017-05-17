@@ -14,9 +14,8 @@ public class Main extends JFrame {
 		setResizable(false);
 		
 		Menu menu = new Menu();
+		
 		add(menu);
-		
-		
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
