@@ -18,6 +18,7 @@ public class Menu extends JPanel {
 		
 		Custombutton button = new Custombutton("START");
 		
+		button.setOpaque(false);
 		
 		button.setAlignmentX(CENTER_ALIGNMENT);
 		button.addActionListener(new AbstractAction(){
@@ -31,8 +32,7 @@ public class Menu extends JPanel {
 		add(button);
 		
 		add(Box.createVerticalGlue());
-		
-		
+			
 	}
 	
 	public void start() {
@@ -44,11 +44,9 @@ public class Menu extends JPanel {
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		if(!started)
-			g.drawImage(new ImageIcon(Menu.class.getResource("background2.jpg")).getImage(), 0,0,640,480,this);
+			g.drawImage(new ImageIcon(Menu.class.getResource("avengers_background.jpg")).getImage(), 0,0,640,480,this);
 		else
 			setBackground(Color.BLUE);
 	}
-	
-	
 	
 }
