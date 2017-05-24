@@ -9,6 +9,7 @@ import javax.swing.*;
 public class Menu extends JPanel {
 	
 	public boolean started = false;
+	
 
 	
 	public Menu(){
@@ -24,6 +25,8 @@ public class Menu extends JPanel {
 		button.addActionListener(new AbstractAction(){
 				public void actionPerformed(ActionEvent e){
 					start();
+					
+					new Story();
 				}
 				
 		});
@@ -43,10 +46,11 @@ public class Menu extends JPanel {
 	@Override
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
-		if(!started)
+		
 			g.drawImage(new ImageIcon(Menu.class.getResource("avengers_background.jpg")).getImage(), 0,0,640,480,this);
-		else
-			setBackground(Color.BLUE);
+		
+			
+		}
 	}
 	
-}
+

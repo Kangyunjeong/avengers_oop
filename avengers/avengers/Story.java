@@ -24,6 +24,7 @@ import java.awt.event.ActionEvent;
 
 public class Story {
 
+	
 	private JFrame frame;
 	private JPanel panel;
 	/**
@@ -53,7 +54,7 @@ public class Story {
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() {
+	public void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 805, 570);
 		frame.getContentPane().add(panel=new JPanel(){
@@ -100,7 +101,7 @@ public class Story {
 					.addContainerGap())
 		);
 		panel.setLayout(gl_panel);
-		
+		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	
 		
